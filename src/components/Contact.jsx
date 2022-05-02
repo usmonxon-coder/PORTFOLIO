@@ -1,6 +1,5 @@
 import React from "react";
 import "../styles/Contact.css";
-import Sidebar from "./Sidebar";
 
 export default function Contact(props) {
   return (

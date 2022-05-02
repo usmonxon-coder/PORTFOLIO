@@ -5,12 +5,31 @@ import "../styles/Sidebar.css";
 export default function Sidebar(props) {
   const salom = () => {
     let menu = document.querySelector(".menu");
-    let h1 = document.querySelectorAll("h1");
     let boxes = document.querySelector(".boxes");
     boxes.classList.toggle("active");
     menu.classList.toggle("active");
-    h1.classList.toggle("active");
   };
+
+  const darkMode = () => {
+    checkMode();
+  };
+  function checkMode() {
+    // let dark = document.querySelector(".dark");
+    console.log("iwladi");
+    if (darkMode.checked) {
+      darkModeOn();
+      console.log("oqardi");
+    } else {
+      console.log("qoraydi");
+      darkModeOff();
+    }
+  }
+  function darkModeOn() {
+    document.body.classList.add("dark-mode");
+  }
+  function darkModeOff() {
+    document.body.classList.remove("dark-mode");
+  }
 
   return (
     <div className="sidebar">
@@ -50,6 +69,16 @@ export default function Sidebar(props) {
             <img className="img" src="/images/placeholder.png" alt="rasm4" />
             <h1>Contact</h1>
           </Link>
+        </div>
+        <hr />
+        <div className="box box1">
+          <img
+            onClick={darkMode}
+            className="dark"
+            src="/images/placeholder.png"
+            alt="rasm4"
+          />
+          <h1>Dark rejim</h1>
         </div>
         <hr />
       </div>

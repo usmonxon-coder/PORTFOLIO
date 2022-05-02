@@ -1,5 +1,5 @@
 .home {
-  height: 100vh;
+  min-height: 100vh;
   background-image: url(../../public/images/usmonxon.jpg);
   background-attachment: fixed;
   background-repeat: no-repeat;
@@ -7,6 +7,62 @@
   background-position: center;
 }
 .home .container {
-  width: 1200px;
+  width: 90%;
   margin: 0 auto;
+}
+.home .container .name {
+  text-align: center;
+  color: blue;
+}
+.home .container h1 {
+  padding-top: 150px;
+  font-size: 40px;
+}
+
+.home .boxes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.home .boxes .box {
+  margin-top: 100px;
+  padding: 12px;
+  background-color: plum;
+  border-radius: 12px;
+  margin-left: 16px;
+  box-shadow: 0 0 10px 4px black;
+}
+
+.home .boxes .box img {
+  width: 40px;
+}
+
+.home .boxes .box1 {
+  animation: box 2.5s 0.1s linear infinite;
+}
+.home .boxes .box2 {
+  animation: box 2.5s 0.2s linear infinite;
+}
+.home .boxes .box3 {
+  animation: box 2.5s 0.3s linear infinite;
+}
+.home .boxes .box4 {
+  animation: box 2.5s 0.4s linear infinite;
+}
+
+/* @keyframes box {
+  0% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(0,40px);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+} */
+@media(max-width:576px){
+  .home .container h1{
+    font-size: 30px;
+  }
 }
