@@ -1,0 +1,12 @@
+.about {
+  background-image: url(../../public/images/user.png);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+.about .container{
+    width: 1200px;
+    margin: 0 auto;
+}
