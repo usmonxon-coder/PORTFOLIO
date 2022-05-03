@@ -23,7 +23,7 @@ export default function Contact(props) {
             <img src="/images/phone.png" alt="rasm" />
             <h2>Phone</h2>
           
-              <a href="">+998944157775</a>
+              <a href="https://t.me/Maykl_skofild_2001">+998944157775</a>
             
           </div>
           <div className="box box1">
