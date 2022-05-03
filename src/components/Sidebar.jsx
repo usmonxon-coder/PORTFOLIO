@@ -3,44 +3,40 @@ import { Link } from "react-router-dom";
 import "../styles/Sidebar.css";
 
 export default function Sidebar(props) {
+  const [isdark, setIsDark] = useState(true);
   const salom = () => {
     let menu = document.querySelector(".menu");
     let boxes = document.querySelector(".boxes");
+    let darkText = document.querySelector(".darkText");
     boxes.classList.toggle("active");
     menu.classList.toggle("active");
+    darkText.classList.toggle("active");
   };
 
-  const darkMode = () => {
-    checkMode();
+  const light = () => {
+    document.body.classList.toggle("dark-theme");
+    setIsDark(false);
   };
-  function checkMode() {
-    // let dark = document.querySelector(".dark");
-    console.log("iwladi");
-    if (darkMode.checked) {
-      darkModeOn();
-      console.log("oqardi");
-    } else {
-      console.log("qoraydi");
-      darkModeOff();
-    }
-  }
-  function darkModeOn() {
-    document.body.classList.add("dark-mode");
-  }
-  function darkModeOff() {
-    document.body.classList.remove("dark-mode");
-  }
-
+  const dark = () => {
+    document.body.classList.toggle("dark-theme");
+    setIsDark(true);
+  };
+  
   return (
     <div className="sidebar">
       <div className="boxes">
-        <div className="box">
+        <div className="box box2">
           <img
             onClick={salom}
             className="menu"
             src="/images/menu (1).png"
             alt="menu"
           />
+          <select>
+            <option value="Uz">Uz</option>
+            <option value="Eng">Eng</option>
+            <option value="Rus">Rus</option>
+          </select>
         </div>
         <hr />
         <div className="box box1">
@@ -71,14 +67,24 @@ export default function Sidebar(props) {
           </Link>
         </div>
         <hr />
-        <div className="box box1">
-          <img
-            onClick={darkMode}
-            className="dark"
-            src="/images/placeholder.png"
-            alt="rasm4"
-          />
-          <h1>Dark rejim</h1>
+        <div className="box box2">
+          {isdark ? (
+            <img
+              onClick={light}
+              className="dark"
+              src="/images/light.png"
+              alt="rasm4"
+            />
+          ) : (
+            <img
+              onClick={dark}
+              className="dark"
+              src="/images/dark.png"
+              alt="rasm4"
+            />
+          )}
+
+          <h1 className="darkText">Mode</h1>
         </div>
         <hr />
       </div>

@@ -6,7 +6,7 @@ export default function Home(props) {
     <div className="home">
       <div className="container">
         <div className="name">
-          <h1>I'M USMONXON</h1>
+          <h1>HI, I'M USMONXON</h1>
         </div>
         <div className="boxes">
           <div className="box box1">

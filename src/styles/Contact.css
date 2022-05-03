@@ -1,0 +1,99 @@
+.contact .container {
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+}
+.contact .container h1 {
+  font-size: 40px;
+  padding-top: 50px;
+  margin-bottom: 50px;
+}
+.contact .boxes {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-bottom: 40px;
+}
+.contact .box {
+  padding: 20px;
+  border-radius: 25px;
+  box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.342);
+  width: 23%;
+}
+.contact .boxes img {
+  width: 80px;
+  margin-bottom: 20px;
+}
+.contact .box h2 {
+  margin-bottom: 10px;
+  font-size: 28px;
+}
+.contact .box a {
+  font-size: 18px;
+  color: blue;
+}
+.contact .cards {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+.contact .card {
+  box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.253);
+  width: 40%;
+  padding: 20px;
+  border-radius: 10px;
+}
+.contact .cards .card h2 {
+  margin: 30px 0;
+  font-size: 30px;
+}
+.cards form input {
+  display: block;
+  margin-bottom: 15px;
+  width: 100%;
+  padding: 10px;
+  outline: none;
+  font-size: 18px;
+}
+.contact .card textarea {
+  width: 100%;
+  outline: none;
+  margin-bottom: 20px;
+  font-size: 18px;
+}
+.contact .card button {
+  width: 100%;
+  padding: 10px;
+  background-color: red;
+  color: blue;
+  outline: none;
+  border: none;
+  font-size: 20px;
+  border-radius: 30px;
+  margin-bottom: 20px;
+}
+@media (max-width: 992px) {
+  .contact .boxes {
+    flex-wrap: wrap;
+  }
+  .contact .boxes .box {
+    width: 45%;
+    margin-bottom: 30px;
+  }
+  .contact .card {
+    width: 70%;
+  }
+}
+@media (max-width: 576px) {
+  .contact .boxes {
+    flex-direction: column;
+  }
+  .contact .boxes .box {
+    width: 80%;
+    margin-bottom: 30px;
+  }
+  .contact .card {
+    width: 100%;
+  }
+}

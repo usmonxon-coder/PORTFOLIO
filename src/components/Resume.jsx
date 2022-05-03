@@ -6,6 +6,11 @@ export default function Resume(props) {
     <div className="resume">
       <div className="container">
         <h2>Resume</h2>
+        <div className="boxes">
+          <div className="left">
+            
+          </div>
+        </div>
       </div>
     </div>
   );
