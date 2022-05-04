@@ -10,20 +10,28 @@
   width: 80%;
   margin: 0 auto;
 }
-.home .container .boxes .box {
+.home .container .boxes {
+  display: flex;
+  /* align-items: center; */
+  justify-content: space-between;
+}
+.home .boxes .box1 {
+  width: 60%;
+}
+.home .container .boxes .box1 {
   padding-top: 150px;
   color: blue;
 }
-.home .container .box h1 {
+.home .container .box1 h1 {
   font-size: 37px;
   margin: 15px 0;
 }
-.home .container .box h2 {
+.home .container .box1 h2 {
   color: red;
   font-size: 30px;
   margin-bottom: 50px;
 }
-.home .boxes .box .link1 {
+.home .boxes .box1 .link1 {
   padding: 20px;
   font-size: 18px;
   background-color: rgb(15, 15, 15);
@@ -34,7 +42,7 @@
   transition: 1s;
   text-shadow: 2px 3px 4px #24ecff;
 }
-.home .boxes .box .link1:hover {
+.home .boxes .box1 .link1:hover {
   background-color: #24ecff;
   color: black;
   box-shadow: 0 0 60px #24ecff;
@@ -49,17 +57,106 @@
 .home .message a {
   width: 60px;
   height: 60px;
-  /* background-color: transparent; */
+  background-color: rgba(255, 255, 255, 0.116);
   padding: 8px;
   border: 1px solid black;
 }
 
-.home .box .message img {
+.home .box1 .message img {
   width: 100%;
 }
+.home .boxes .box2 {
+  margin-top: 100px;
+  width: 335px;
+  height: 445px;
+  background-color: blue;
+  border-radius: 30px;
+  overflow: hidden;
+  position: relative;
+  padding: 7.5px;
+  z-index: 1;
+}
+.home .boxes .box2::after {
+  content: " ";
+  position: absolute;
+  top: -90px;
+  left: 100px;
+  width: 150px;
+  height: 620px;
+  border-radius: 30px;
+  background: linear-gradient(to right, crimson, yellow, turquoise, violet);
+  animation: border1 3s linear infinite;
+  box-shadow: 0 100px 50px 30px rgb(0, 0, 0);
+}
+.home .box2 .black {
+  width: 320px;
+  height: 430px;
+  position: absolute;
+  z-index: 100;
+  border-radius: 25px;
+  background-color: black;
+  color: white;
+  overflow: hidden;
+}
+.home .box2 .quti {
+  text-align: center;
+  background-color: transparent;
+}
+.home .box2 .background {
+  background-image: url(../../public/images/Rectangle.png);
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 320px;
+  height: 170px;
+}
+.home .box2 .quti .img2 {
+  margin-top: 120px;
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 100%;
+  border: 5px solid white;
+}
+.home .box2 .quti h3 {
+  margin: 70px 0 20px 0;
+}
+.home .box2 .quti p {
+  padding-bottom: 30px;
+}
+@keyframes border1 {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
 
+@media (max-width: 767px) {
+  .home .boxes {
+    flex-direction: column;
+  }
+  .home .boxes .box1,
+  .box2 {
+    width: 100%;
+    margin: 0 auto;
+  }
+}
 @media (max-width: 576px) {
   .home .container h1 {
     font-size: 30px;
+  }
+  .home .boxes .box2 {
+    width: 290px;
+    height: 390px;
+  }
+  .home .box2 .black {
+    width: 275px;
+    height: 375px;
+  }
+  .home .box2 .black .img2 {
+    margin-right: 50px;
   }
 }

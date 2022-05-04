@@ -7,7 +7,7 @@ export default function Home(props) {
     <div className="home">
       <div className="container">
         <div className="boxes">
-          <div className="box">
+          <div className="box1">
             <h3 style={{ fontSize: "30px" }}>Hello, I'm</h3>
             <h1>USMONXON SIROCHXONOV</h1>
             <h2>Frontend Developer</h2>
@@ -33,7 +33,20 @@ export default function Home(props) {
               </a>
             </div>
           </div>
-          
+          <div className="box2">
+            <div className="black">
+              <div className="quti">
+                <div className="background">
+                  <img className="img2" src="/images/usmonxon.jpg" alt="rasm" />
+                </div>
+                <h3>Usmonxon Sirochxonov</h3>
+                <p>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Provident inventore doloremque fuga tempora dolor.
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
