@@ -3,7 +3,7 @@
   top: 0;
   left: 0;
   width: 70px;
-  min-height: 100vh;
+  height: 100vh;
   background-color: var(--primary-color);
   transition: all 0.6s ease;
   overflow: hidden;
@@ -51,7 +51,13 @@
   font-size: 20px;
 }
 @media (max-width: 576px) {
+  .sidebar .boxes {
+  height: 60px;
+  border-radius: 10px;
+  }
   .sidebar .boxes.active {
-    width: 100%;
+    /* width: 70px; */
+    height: 100vh;
+    border-radius: 0;
   }
 }
