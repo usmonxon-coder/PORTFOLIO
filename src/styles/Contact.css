@@ -1,5 +1,6 @@
-.contact{
+.contact {
   background-color: silver;
+  min-height: 100vh;
 }
 .contact .container {
   width: 80%;

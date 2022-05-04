@@ -7,10 +7,8 @@ export default function Sidebar(props) {
   const salom = () => {
     let menu = document.querySelector(".menu");
     let boxes = document.querySelector(".boxes");
-    let darkText = document.querySelector(".darkText");
     boxes.classList.toggle("active");
     menu.classList.toggle("active");
-    darkText.classList.toggle("active");
   };
 
   const light = () => {
@@ -21,7 +19,20 @@ export default function Sidebar(props) {
     document.body.classList.toggle("dark-theme");
     setIsDark(true);
   };
-  
+  const cliced = () => {
+    let boxes1 = document.querySelector(".boxes");
+    // if (window.innerWidth < 576) {
+    //   if (boxes1.classList.value === "boxes active") {
+    //     boxes1.style.width = "70px";
+    //   }
+    //   // else if (boxes1.classList.value === "boxes active") {
+    //   //   boxes1.style.width = "70px";
+    //   // }
+    // }
+    console.log(boxes1.classList.value);
+    // salom();
+  };
+
   return (
     <div className="sidebar">
       <div className="boxes">
@@ -39,28 +50,28 @@ export default function Sidebar(props) {
           </select>
         </div>
         <hr />
-        <div className="box box1">
+        <div onClick={cliced} className="box box1">
           <Link className="link" to="/">
             <img className="img" src="/images/home.png" alt="home" />
             <h1>Home</h1>
           </Link>
         </div>
         <hr />
-        <div className="box box1">
+        <div onClick={cliced} className="box box1">
           <Link className="link" to="/about">
             <img className="img" src="/images/user.png" alt="rasm2" />
             <h1>About</h1>
           </Link>
         </div>
         <hr />
-        <div className="box box1">
+        <div onClick={cliced} className="box box1">
           <Link className="link" to="/resume">
             <img className="img" src="/images/resume.png" alt="rasm3" />
             <h1>Resume</h1>
           </Link>
         </div>
         <hr />
-        <div className="box box1">
+        <div onClick={cliced} className="box box1">
           <Link className="link" to="/contact">
             <img className="img" src="/images/placeholder.png" alt="rasm4" />
             <h1>Contact</h1>
