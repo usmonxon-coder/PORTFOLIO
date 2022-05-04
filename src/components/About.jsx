@@ -20,7 +20,7 @@ export default function About(props) {
             <hr />
             <div className="box box1">
               <div className="img">
-                <img src="/images/user.png" alt="rasm" />
+                <img src="/images/calendar.png" alt="rasm" />
                 <p>Birth day</p>
               </div>
               <p>03.11.2001</p>
@@ -28,7 +28,7 @@ export default function About(props) {
             <hr />
             <div className="box box2">
               <div className="img">
-                <img src="/images/user.png" alt="rasm" />
+                <img src="/images/video-stream.png" alt="rasm" />
                 <p>Hobbies</p>
               </div>
               <p>Books reading</p>
@@ -36,7 +36,7 @@ export default function About(props) {
             <hr />
             <div className="box box3">
               <div className="img">
-                <img src="/images/user.png" alt="rasm" />
+                <img src="/images/web.png" alt="rasm" />
                 <p>Web Site</p>
               </div>
               <p>www.usmonxon.com</p>
@@ -47,7 +47,9 @@ export default function About(props) {
                 If you are interested in my work, if you want to offer a
                 Partnership or a Job, write it down without hesitation.
               </p>
-              <Link className="btn" to="/contact">MESSAGE ME</Link>
+              <Link className="btn" to="/contact">
+                MESSAGE ME
+              </Link>
             </div>
           </div>
         </div>

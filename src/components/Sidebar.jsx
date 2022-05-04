@@ -21,15 +21,15 @@ export default function Sidebar(props) {
   };
   const cliced = () => {
     let boxes1 = document.querySelector(".boxes");
+    let box1 = document.querySelector(".box1");
     // if (window.innerWidth < 576) {
-    //   if (boxes1.classList.value === "boxes active") {
-    //     boxes1.style.width = "70px";
-    //   }
-    //   // else if (boxes1.classList.value === "boxes active") {
-    //   //   boxes1.style.width = "70px";
-    //   // }
+    // if (boxes1.classList.value === "boxes") {
+    //   box1.style.backgroundColor = "red";
+    // } else if (boxes1.classList.value === "boxes active") {
+    //   box1.style.backgroundColor = "green";
     // }
-    console.log(boxes1.classList.value);
+    // }
+    console.log(boxes1.classList.value, box1);
     // salom();
   };
 
