@@ -92,7 +92,7 @@
   width: 320px;
   height: 430px;
   position: absolute;
-  z-index: 100;
+  z-index: 90;
   border-radius: 25px;
   background-color: black;
   color: white;

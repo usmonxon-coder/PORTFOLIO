@@ -8,6 +8,7 @@
   transition: all 0.6s ease;
   overflow: hidden;
   border-right: 2px solid blue;
+  z-index: 100;
 }
 .sidebar .boxes.active {
   width: 260px;
@@ -22,21 +23,12 @@
 .sidebar .box {
   padding: 10px;
   margin-bottom: 10px;
-  transition: all 0.4s  ease;
+  transition: all 0.4s ease;
   position: relative;
 }
-/* .sidebar .box1::after {
-  content: "";
-  position: absolute;
-  right: 0;
-  top: 0;
-  width: 2px;
-  height: 100%;
-  background-color: black;
+.sidebar .box1:active {
+  border: 1px solid red;
 }
-.sidebar .box1::after:hover{
-  background-color: yellow;
-} */
 .sidebar .box2 {
   display: flex;
   align-items: center;
